@@ -1,3 +1,3 @@
-# Repositório de Testes
+# Projeto para GitHub Actions
 
-Repositório criado para testar o uso do GitHub Actions, para Integração Contínua (Continuous Integration)
+Projeto criado com intuito de utilizar GitHub Actions para Integração Contínua (Continuous Integration) para organizações Salesforce.
