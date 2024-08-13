@@ -4,6 +4,7 @@ public class AccountRepositoryTest {
     static void makeData(){
         Account account = new Account();
         account.Name = 'Test Account';
+        account.BillingCity = 'Sao Paulo';
         insert account;
     }
 
