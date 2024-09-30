@@ -1,12 +1,13 @@
-name: Validation
+name: Deploy
 on:
-  pull_request:
+  push:
     paths:
       - force-app/**
     branches:
       - main
 jobs:
-  validate-to-main:
+  deploy-to-main:
+    if: github.event.pull_request.merge == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v3
@@ -45,4 +46,4 @@ jobs:
       - name: Deployment - run all tests
         run: >
           sfdx force:source:deploy -p "changed-sources/force-app"  --testlevel
-          RunLocalTests --json --checkonly
+          RunLocalTests --json

@@ -43,4 +43,5 @@ $RECYCLE.BIN/
 **/__pycache__/
 **/.venv/
 **/venv/
-.github/worklows/nmain.yml
+manifest/package.xml
+.github/workflows/nmain.yml

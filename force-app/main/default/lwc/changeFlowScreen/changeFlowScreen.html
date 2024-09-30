@@ -1,0 +1,14 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item size="3"></lightning-layout-item>
+            <template lwc:if={showPrevious}>
+                <lightning-button label="Back" onclick={handlePrevious}></lightning-button>
+            </template>
+        <lightning-layout-item size="6"></lightning-layout-item>
+        <lightning-layout-item size="3">
+            <template lwc:if={showNext}>
+                <lightning-button label="Next" onclick={handleNext}></lightning-button>
+            </template>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
