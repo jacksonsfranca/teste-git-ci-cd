@@ -7,7 +7,7 @@ on:
       - main
 jobs:
   deploy-to-main:
-    if: github.event.pull_request.merge == true
+    #if: github.event.pull_request.merge == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v3
